@@ -9,4 +9,7 @@
 import Foundation
 public class AppDepedencyContainer {
     
+    func makeViewController() -> ViewController {
+        return ViewController()
+    }
 }
