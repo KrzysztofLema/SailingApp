@@ -8,15 +8,13 @@
 
 import UIKit
 
-class MainView: UIView  {
+class MainView: NoStoryBoardView  {
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
+    override func constructHierarchy() {
         backgroundColor = .green
     }
     
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+    override func activateConstraitns() {
+        
     }
-    
 }

@@ -15,6 +15,8 @@
 		9501274724E6D8120004C354 /* SailingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9501274624E6D8120004C354 /* SailingAppTests.swift */; };
 		95C124FD24FA4C4900206ADF /* AppDepedencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C124FC24FA4C4900206ADF /* AppDepedencyContainer.swift */; };
 		95C1250224FA572900206ADF /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C1250124FA572900206ADF /* MainController.swift */; };
+		95C1250524FA666C00206ADF /* NoStoryBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C1250424FA666C00206ADF /* NoStoryBoardView.swift */; };
+		95C1250724FA671100206ADF /* NoStoryboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C1250624FA671100206ADF /* NoStoryboardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		9501274824E6D8120004C354 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		95C124FC24FA4C4900206ADF /* AppDepedencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDepedencyContainer.swift; sourceTree = "<group>"; };
 		95C1250124FA572900206ADF /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		95C1250424FA666C00206ADF /* NoStoryBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoStoryBoardView.swift; sourceTree = "<group>"; };
+		95C1250624FA671100206ADF /* NoStoryboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoStoryboardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,7 @@
 		9501272E24E6D8100004C354 /* SailingApp */ = {
 			isa = PBXGroup;
 			children = (
+				95C1250324FA64F800206ADF /* Reusable */,
 				95C124FC24FA4C4900206ADF /* AppDepedencyContainer.swift */,
 				95C1250024FA56D200206ADF /* MainView */,
 				9501272F24E6D8100004C354 /* AppDelegate.swift */,
@@ -108,6 +113,15 @@
 				95C1250124FA572900206ADF /* MainController.swift */,
 			);
 			path = MainView;
+			sourceTree = "<group>";
+		};
+		95C1250324FA64F800206ADF /* Reusable */ = {
+			isa = PBXGroup;
+			children = (
+				95C1250424FA666C00206ADF /* NoStoryBoardView.swift */,
+				95C1250624FA671100206ADF /* NoStoryboardViewController.swift */,
+			);
+			path = Reusable;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +250,8 @@
 				9501273024E6D8100004C354 /* AppDelegate.swift in Sources */,
 				9501273224E6D8100004C354 /* SceneDelegate.swift in Sources */,
 				95C124FD24FA4C4900206ADF /* AppDepedencyContainer.swift in Sources */,
+				95C1250524FA666C00206ADF /* NoStoryBoardView.swift in Sources */,
+				95C1250724FA671100206ADF /* NoStoryboardViewController.swift in Sources */,
 				95C1250224FA572900206ADF /* MainController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
