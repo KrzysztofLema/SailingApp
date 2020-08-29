@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import SailingAppUIKit
 
-class MainView: NoStoryBoardView  {
+public class MainView: NoStoryBoardView  {
     
     override func constructHierarchy() {
         backgroundColor = .green

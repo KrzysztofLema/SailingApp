@@ -7,7 +7,7 @@
 //
 
 import UIKit
-class MainController: NoStoryboardViewController {
+public class MainController: NoStoryboardViewController {
     
     override init() {
         super.init()
