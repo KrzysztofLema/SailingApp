@@ -9,7 +9,7 @@
 import UIKit
 class MainController: NoStoryboardViewController {
     
-    public override init() {
+    override init() {
         super.init()
         view = MainView()
     }

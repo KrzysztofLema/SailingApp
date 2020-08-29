@@ -8,17 +8,24 @@
 
 import UIKit
 
-class NoStoryboardViewController: UIViewController {
-    
-        public init() {
-            super.init(nibName: nil, bundle: nil)
-        }
+open class NoStoryboardViewController: UIViewController {
 
-        public override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
-            super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-        }
+  // MARK: - Methods
+  public init() {
+    super.init(nibName: nil, bundle: nil)
+  }
 
-        public required init?(coder aDecoder: NSCoder) {
-            fatalError("You can't load this ViewController from Xib. iOS Academy wants DI")
-        }
+  @available(*, unavailable,
+    message: "Loading this view controller from a nib is unsupported in favor of initializer dependency injection."
+  )
+  public override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+    super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+  }
+
+  @available(*, unavailable,
+    message: "Loading this view controller from a nib is unsupported in favor of initializer dependency injection."
+  )
+  public required init?(coder aDecoder: NSCoder) {
+    fatalError("Loading this view controller from a nib is unsupported in favor of initializer dependency injection.")
+  }
 }
