@@ -17,6 +17,12 @@
 		95C1250224FA572900206ADF /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C1250124FA572900206ADF /* MainController.swift */; };
 		95C1250524FA666C00206ADF /* NoStoryBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C1250424FA666C00206ADF /* NoStoryBoardView.swift */; };
 		95C1250724FA671100206ADF /* NoStoryboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C1250624FA671100206ADF /* NoStoryboardViewController.swift */; };
+		95C1254324FA772800206ADF /* SailingAppUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 95C1253324FA772800206ADF /* SailingAppUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		95C1254624FA772800206ADF /* SailingAppUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95C1253124FA772800206ADF /* SailingAppUIKit.framework */; };
+		95C1254724FA772800206ADF /* SailingAppUIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 95C1253124FA772800206ADF /* SailingAppUIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		95C1256624FA77A300206ADF /* SailingAppKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 95C1255624FA77A300206ADF /* SailingAppKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		95C1256924FA77A300206ADF /* SailingAppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95C1255424FA77A300206ADF /* SailingAppKit.framework */; };
+		95C1256A24FA77A300206ADF /* SailingAppKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 95C1255424FA77A300206ADF /* SailingAppKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,7 +33,36 @@
 			remoteGlobalIDString = 9501272B24E6D8100004C354;
 			remoteInfo = SailingApp;
 		};
+		95C1254424FA772800206ADF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9501272424E6D8100004C354 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 95C1253024FA772800206ADF;
+			remoteInfo = SailingAppUIKit;
+		};
+		95C1256724FA77A300206ADF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9501272424E6D8100004C354 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 95C1255324FA77A300206ADF;
+			remoteInfo = SailingAppKit;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		95C1254824FA772800206ADF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				95C1254724FA772800206ADF /* SailingAppUIKit.framework in Embed Frameworks */,
+				95C1256A24FA77A300206ADF /* SailingAppKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		9501272C24E6D8100004C354 /* SailingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SailingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +79,12 @@
 		95C1250124FA572900206ADF /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 		95C1250424FA666C00206ADF /* NoStoryBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoStoryBoardView.swift; sourceTree = "<group>"; };
 		95C1250624FA671100206ADF /* NoStoryboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoStoryboardViewController.swift; sourceTree = "<group>"; };
+		95C1253124FA772800206ADF /* SailingAppUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SailingAppUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		95C1253324FA772800206ADF /* SailingAppUIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SailingAppUIKit.h; sourceTree = "<group>"; };
+		95C1253424FA772800206ADF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95C1255424FA77A300206ADF /* SailingAppKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SailingAppKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		95C1255624FA77A300206ADF /* SailingAppKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SailingAppKit.h; sourceTree = "<group>"; };
+		95C1255724FA77A300206ADF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +92,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95C1254624FA772800206ADF /* SailingAppUIKit.framework in Frameworks */,
+				95C1256924FA77A300206ADF /* SailingAppKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		9501273F24E6D8120004C354 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95C1252E24FA772800206ADF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95C1255124FA77A300206ADF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -68,6 +125,8 @@
 			isa = PBXGroup;
 			children = (
 				9501272E24E6D8100004C354 /* SailingApp */,
+				95C1253224FA772800206ADF /* SailingAppUIKit */,
+				95C1255524FA77A300206ADF /* SailingAppKit */,
 				9501274524E6D8120004C354 /* SailingAppTests */,
 				9501272D24E6D8100004C354 /* Products */,
 			);
@@ -78,6 +137,8 @@
 			children = (
 				9501272C24E6D8100004C354 /* SailingApp.app */,
 				9501274224E6D8120004C354 /* SailingAppTests.xctest */,
+				95C1253124FA772800206ADF /* SailingAppUIKit.framework */,
+				95C1255424FA77A300206ADF /* SailingAppKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -85,14 +146,11 @@
 		9501272E24E6D8100004C354 /* SailingApp */ = {
 			isa = PBXGroup;
 			children = (
-				95C1250324FA64F800206ADF /* Reusable */,
-				95C124FC24FA4C4900206ADF /* AppDepedencyContainer.swift */,
-				95C1250024FA56D200206ADF /* MainView */,
-				9501272F24E6D8100004C354 /* AppDelegate.swift */,
-				9501273124E6D8100004C354 /* SceneDelegate.swift */,
 				9501273824E6D8120004C354 /* Assets.xcassets */,
-				9501273A24E6D8120004C354 /* LaunchScreen.storyboard */,
+				9501272F24E6D8100004C354 /* AppDelegate.swift */,
 				9501273D24E6D8120004C354 /* Info.plist */,
+				9501273A24E6D8120004C354 /* LaunchScreen.storyboard */,
+				9501273124E6D8100004C354 /* SceneDelegate.swift */,
 			);
 			path = SailingApp;
 			sourceTree = "<group>";
@@ -124,7 +182,55 @@
 			path = Reusable;
 			sourceTree = "<group>";
 		};
+		95C1253224FA772800206ADF /* SailingAppUIKit */ = {
+			isa = PBXGroup;
+			children = (
+				95C1253424FA772800206ADF /* Info.plist */,
+				95C1250324FA64F800206ADF /* Reusable */,
+				95C1253324FA772800206ADF /* SailingAppUIKit.h */,
+			);
+			path = SailingAppUIKit;
+			sourceTree = "<group>";
+		};
+		95C1255524FA77A300206ADF /* SailingAppKit */ = {
+			isa = PBXGroup;
+			children = (
+				95C1255724FA77A300206ADF /* Info.plist */,
+				95C1255624FA77A300206ADF /* SailingAppKit.h */,
+				95C1257124FA77C700206ADF /* UI */,
+			);
+			path = SailingAppKit;
+			sourceTree = "<group>";
+		};
+		95C1257124FA77C700206ADF /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				95C124FC24FA4C4900206ADF /* AppDepedencyContainer.swift */,
+				95C1250024FA56D200206ADF /* MainView */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		95C1252C24FA772800206ADF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95C1254324FA772800206ADF /* SailingAppUIKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95C1254F24FA77A300206ADF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95C1256624FA77A300206ADF /* SailingAppKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		9501272B24E6D8100004C354 /* SailingApp */ = {
@@ -135,10 +241,13 @@
 				9501272924E6D8100004C354 /* Frameworks */,
 				9501272A24E6D8100004C354 /* Resources */,
 				950FF52C24E6E717009D894C /* SwiftLint */,
+				95C1254824FA772800206ADF /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				95C1254524FA772800206ADF /* PBXTargetDependency */,
+				95C1256824FA77A300206ADF /* PBXTargetDependency */,
 			);
 			name = SailingApp;
 			productName = SailingApp;
@@ -163,6 +272,42 @@
 			productReference = 9501274224E6D8120004C354 /* SailingAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		95C1253024FA772800206ADF /* SailingAppUIKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95C1254D24FA772800206ADF /* Build configuration list for PBXNativeTarget "SailingAppUIKit" */;
+			buildPhases = (
+				95C1252C24FA772800206ADF /* Headers */,
+				95C1252D24FA772800206ADF /* Sources */,
+				95C1252E24FA772800206ADF /* Frameworks */,
+				95C1252F24FA772800206ADF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SailingAppUIKit;
+			productName = SailingAppUIKit;
+			productReference = 95C1253124FA772800206ADF /* SailingAppUIKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		95C1255324FA77A300206ADF /* SailingAppKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95C1256B24FA77A300206ADF /* Build configuration list for PBXNativeTarget "SailingAppKit" */;
+			buildPhases = (
+				95C1254F24FA77A300206ADF /* Headers */,
+				95C1255024FA77A300206ADF /* Sources */,
+				95C1255124FA77A300206ADF /* Frameworks */,
+				95C1255224FA77A300206ADF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SailingAppKit;
+			productName = SailingAppKit;
+			productReference = 95C1255424FA77A300206ADF /* SailingAppKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -179,6 +324,12 @@
 					9501274124E6D8120004C354 = {
 						CreatedOnToolsVersion = 11.3.1;
 						TestTargetID = 9501272B24E6D8100004C354;
+					};
+					95C1253024FA772800206ADF = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					95C1255324FA77A300206ADF = {
+						CreatedOnToolsVersion = 11.3.1;
 					};
 				};
 			};
@@ -197,6 +348,8 @@
 			targets = (
 				9501272B24E6D8100004C354 /* SailingApp */,
 				9501274124E6D8120004C354 /* SailingAppTests */,
+				95C1253024FA772800206ADF /* SailingAppUIKit */,
+				95C1255324FA77A300206ADF /* SailingAppKit */,
 			);
 		};
 /* End PBXProject section */
@@ -212,6 +365,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		9501274024E6D8120004C354 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95C1252F24FA772800206ADF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95C1255224FA77A300206ADF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -264,6 +431,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		95C1252D24FA772800206ADF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95C1255024FA77A300206ADF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -271,6 +452,16 @@
 			isa = PBXTargetDependency;
 			target = 9501272B24E6D8100004C354 /* SailingApp */;
 			targetProxy = 9501274324E6D8120004C354 /* PBXContainerItemProxy */;
+		};
+		95C1254524FA772800206ADF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 95C1253024FA772800206ADF /* SailingAppUIKit */;
+			targetProxy = 95C1254424FA772800206ADF /* PBXContainerItemProxy */;
+		};
+		95C1256824FA77A300206ADF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 95C1255324FA77A300206ADF /* SailingAppKit */;
+			targetProxy = 95C1256724FA77A300206ADF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -482,6 +673,118 @@
 			};
 			name = Release;
 		};
+		95C1254924FA772800206ADF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 74925668M8;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SailingAppUIKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pl.KrzysztofLema.SailingAppUIKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		95C1254A24FA772800206ADF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 74925668M8;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SailingAppUIKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pl.KrzysztofLema.SailingAppUIKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		95C1256C24FA77A300206ADF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 74925668M8;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SailingAppKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pl.KrzysztofLema.SailingAppKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		95C1256D24FA77A300206ADF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 74925668M8;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SailingAppKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pl.KrzysztofLema.SailingAppKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -508,6 +811,24 @@
 			buildConfigurations = (
 				9501274F24E6D8120004C354 /* Debug */,
 				9501275024E6D8120004C354 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95C1254D24FA772800206ADF /* Build configuration list for PBXNativeTarget "SailingAppUIKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95C1254924FA772800206ADF /* Debug */,
+				95C1254A24FA772800206ADF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95C1256B24FA77A300206ADF /* Build configuration list for PBXNativeTarget "SailingAppKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95C1256C24FA77A300206ADF /* Debug */,
+				95C1256D24FA77A300206ADF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

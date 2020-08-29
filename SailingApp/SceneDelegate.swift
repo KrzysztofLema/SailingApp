@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SailingAppKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
