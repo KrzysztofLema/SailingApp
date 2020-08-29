@@ -11,7 +11,7 @@ import SailingAppKit
 
 public class AppDepedencyContainer {
     
-    func makeViewController() -> MainController {
-        return MainController()
+    func makeViewController() -> MainMapController {
+        return MainMapController()
     }
 }
