@@ -234,9 +234,9 @@
 		95C1255524FA77A300206ADF /* SailingAppKit */ = {
 			isa = PBXGroup;
 			children = (
-				9581038824FA9CD10036D751 /* Data */,
 				95C1255624FA77A300206ADF /* SailingAppKit.h */,
 				95C1255724FA77A300206ADF /* Info.plist */,
+				9581038824FA9CD10036D751 /* Data */,
 				9581038224FA98C80036D751 /* Models */,
 				95C1257124FA77C700206ADF /* UI */,
 			);
