@@ -6,7 +6,7 @@
 //  Copyright © 2020 Krzysztof Lema. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 //! Project version number for SailingAppKit.
 FOUNDATION_EXPORT double SailingAppKitVersionNumber;
