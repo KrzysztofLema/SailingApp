@@ -13,6 +13,7 @@
 		9501273924E6D8120004C354 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9501273824E6D8120004C354 /* Assets.xcassets */; };
 		9501273C24E6D8120004C354 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9501273A24E6D8120004C354 /* LaunchScreen.storyboard */; };
 		9501274724E6D8120004C354 /* SailingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9501274624E6D8120004C354 /* SailingAppTests.swift */; };
+		9515538824FAB5E300DE1A2B /* ReSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9515538724FAB5E300DE1A2B /* ReSwift */; };
 		9581038424FA98D20036D751 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9581038324FA98D20036D751 /* Location.swift */; };
 		9581038B24FA9CEE0036D751 /* LocationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9581038A24FA9CEE0036D751 /* LocationRepository.swift */; };
 		9581038E24FA9D4A0036D751 /* MockUserLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9581038D24FA9D4A0036D751 /* MockUserLocation.swift */; };
@@ -98,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9515538824FAB5E300DE1A2B /* ReSwift in Frameworks */,
 				95C1254624FA772800206ADF /* SailingAppUIKit.framework in Frameworks */,
 				95C1256924FA77A300206ADF /* SailingAppKit.framework in Frameworks */,
 			);
@@ -291,6 +293,9 @@
 				95C1256824FA77A300206ADF /* PBXTargetDependency */,
 			);
 			name = SailingApp;
+			packageProductDependencies = (
+				9515538724FAB5E300DE1A2B /* ReSwift */,
+			);
 			productName = SailingApp;
 			productReference = 9501272C24E6D8100004C354 /* SailingApp.app */;
 			productType = "com.apple.product-type.application";
@@ -384,6 +389,9 @@
 				Base,
 			);
 			mainGroup = 9501272324E6D8100004C354;
+			packageReferences = (
+				9515538624FAB5E300DE1A2B /* XCRemoteSwiftPackageReference "ReSwift" */,
+			);
 			productRefGroup = 9501272D24E6D8100004C354 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -884,6 +892,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9515538624FAB5E300DE1A2B /* XCRemoteSwiftPackageReference "ReSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReSwift/ReSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9515538724FAB5E300DE1A2B /* ReSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9515538624FAB5E300DE1A2B /* XCRemoteSwiftPackageReference "ReSwift" */;
+			productName = ReSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9501272424E6D8100004C354 /* Project object */;
 }
