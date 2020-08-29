@@ -9,11 +9,14 @@
 /* Begin PBXBuildFile section */
 		9501273024E6D8100004C354 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9501272F24E6D8100004C354 /* AppDelegate.swift */; };
 		9501273224E6D8100004C354 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9501273124E6D8100004C354 /* SceneDelegate.swift */; };
-		9501273424E6D8100004C354 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9501273324E6D8100004C354 /* ViewController.swift */; };
+		9501273424E6D8100004C354 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9501273324E6D8100004C354 /* MainView.swift */; };
 		9501273924E6D8120004C354 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9501273824E6D8120004C354 /* Assets.xcassets */; };
 		9501273C24E6D8120004C354 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9501273A24E6D8120004C354 /* LaunchScreen.storyboard */; };
 		9501274724E6D8120004C354 /* SailingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9501274624E6D8120004C354 /* SailingAppTests.swift */; };
 		95C124FD24FA4C4900206ADF /* AppDepedencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C124FC24FA4C4900206ADF /* AppDepedencyContainer.swift */; };
+		95C1250224FA572900206ADF /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C1250124FA572900206ADF /* MainController.swift */; };
+		95C1250524FA666C00206ADF /* NoStoryBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C1250424FA666C00206ADF /* NoStoryBoardView.swift */; };
+		95C1250724FA671100206ADF /* NoStoryboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C1250624FA671100206ADF /* NoStoryboardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +33,7 @@
 		9501272C24E6D8100004C354 /* SailingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SailingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9501272F24E6D8100004C354 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9501273124E6D8100004C354 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9501273324E6D8100004C354 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9501273324E6D8100004C354 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		9501273824E6D8120004C354 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9501273B24E6D8120004C354 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9501273D24E6D8120004C354 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -38,6 +41,9 @@
 		9501274624E6D8120004C354 /* SailingAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SailingAppTests.swift; sourceTree = "<group>"; };
 		9501274824E6D8120004C354 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		95C124FC24FA4C4900206ADF /* AppDepedencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDepedencyContainer.swift; sourceTree = "<group>"; };
+		95C1250124FA572900206ADF /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		95C1250424FA666C00206ADF /* NoStoryBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoStoryBoardView.swift; sourceTree = "<group>"; };
+		95C1250624FA671100206ADF /* NoStoryboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoStoryboardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,13 +85,14 @@
 		9501272E24E6D8100004C354 /* SailingApp */ = {
 			isa = PBXGroup;
 			children = (
+				95C1250324FA64F800206ADF /* Reusable */,
+				95C124FC24FA4C4900206ADF /* AppDepedencyContainer.swift */,
+				95C1250024FA56D200206ADF /* MainView */,
 				9501272F24E6D8100004C354 /* AppDelegate.swift */,
 				9501273124E6D8100004C354 /* SceneDelegate.swift */,
-				9501273324E6D8100004C354 /* ViewController.swift */,
 				9501273824E6D8120004C354 /* Assets.xcassets */,
 				9501273A24E6D8120004C354 /* LaunchScreen.storyboard */,
 				9501273D24E6D8120004C354 /* Info.plist */,
-				95C124FC24FA4C4900206ADF /* AppDepedencyContainer.swift */,
 			);
 			path = SailingApp;
 			sourceTree = "<group>";
@@ -97,6 +104,24 @@
 				9501274824E6D8120004C354 /* Info.plist */,
 			);
 			path = SailingAppTests;
+			sourceTree = "<group>";
+		};
+		95C1250024FA56D200206ADF /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				9501273324E6D8100004C354 /* MainView.swift */,
+				95C1250124FA572900206ADF /* MainController.swift */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		95C1250324FA64F800206ADF /* Reusable */ = {
+			isa = PBXGroup;
+			children = (
+				95C1250424FA666C00206ADF /* NoStoryBoardView.swift */,
+				95C1250624FA671100206ADF /* NoStoryboardViewController.swift */,
+			);
+			path = Reusable;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,10 +246,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9501273424E6D8100004C354 /* ViewController.swift in Sources */,
+				9501273424E6D8100004C354 /* MainView.swift in Sources */,
 				9501273024E6D8100004C354 /* AppDelegate.swift in Sources */,
 				9501273224E6D8100004C354 /* SceneDelegate.swift in Sources */,
 				95C124FD24FA4C4900206ADF /* AppDepedencyContainer.swift in Sources */,
+				95C1250524FA666C00206ADF /* NoStoryBoardView.swift in Sources */,
+				95C1250724FA671100206ADF /* NoStoryboardViewController.swift in Sources */,
+				95C1250224FA572900206ADF /* MainController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
