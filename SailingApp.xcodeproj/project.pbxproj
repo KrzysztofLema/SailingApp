@@ -216,6 +216,21 @@
 			path = SailingApp_iOS;
 			sourceTree = "<group>";
 		};
+		9527A30B24FBA9DC002EDA52 /* UILayer */ = {
+			isa = PBXGroup;
+			children = (
+				9527A30C24FBA9F3002EDA52 /* MainMapView */,
+			);
+			path = UILayer;
+			sourceTree = "<group>";
+		};
+		9527A30C24FBA9F3002EDA52 /* MainMapView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MainMapView;
+			sourceTree = "<group>";
+		};
 		9581038224FA98C80036D751 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -284,6 +299,7 @@
 				95C1255724FA77A300206ADF /* Info.plist */,
 				9581038824FA9CD10036D751 /* Data */,
 				9581038224FA98C80036D751 /* Models */,
+				9527A30B24FBA9DC002EDA52 /* UILayer */,
 			);
 			path = SailingAppKit;
 			sourceTree = "<group>";
