@@ -14,10 +14,10 @@
 		9501273C24E6D8120004C354 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9501273A24E6D8120004C354 /* LaunchScreen.storyboard */; };
 		9501274724E6D8120004C354 /* SailingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9501274624E6D8120004C354 /* SailingAppTests.swift */; };
 		9515538824FAB5E300DE1A2B /* ReSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9515538724FAB5E300DE1A2B /* ReSwift */; };
-		9515538F24FAC83900DE1A2B /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9515538E24FAC83900DE1A2B /* WelcomeViewController.swift */; };
 		951553AE24FB04D100DE1A2B /* SailingApp_iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 9515539E24FB04D100DE1A2B /* SailingApp_iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		951553B124FB04D100DE1A2B /* SailingApp_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9515539C24FB04D100DE1A2B /* SailingApp_iOS.framework */; };
 		951553B224FB04D100DE1A2B /* SailingApp_iOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9515539C24FB04D100DE1A2B /* SailingApp_iOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9527A30724FBA887002EDA52 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9515538E24FAC83900DE1A2B /* WelcomeViewController.swift */; };
 		9581038424FA98D20036D751 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9581038324FA98D20036D751 /* Location.swift */; };
 		9581038B24FA9CEE0036D751 /* LocationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9581038A24FA9CEE0036D751 /* LocationRepository.swift */; };
 		9581038E24FA9D4A0036D751 /* MockUserLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9581038D24FA9D4A0036D751 /* MockUserLocation.swift */; };
@@ -270,9 +270,9 @@
 		95C1253224FA772800206ADF /* SailingAppUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				95C1253324FA772800206ADF /* SailingAppUIKit.h */,
 				95C1253424FA772800206ADF /* Info.plist */,
 				95C1250324FA64F800206ADF /* Reusable */,
-				95C1253324FA772800206ADF /* SailingAppUIKit.h */,
 			);
 			path = SailingAppUIKit;
 			sourceTree = "<group>";
@@ -546,6 +546,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9501273424E6D8100004C354 /* MainMapView.swift in Sources */,
+				9527A30724FBA887002EDA52 /* WelcomeViewController.swift in Sources */,
 				9501273024E6D8100004C354 /* AppDelegate.swift in Sources */,
 				9501273224E6D8100004C354 /* SceneDelegate.swift in Sources */,
 				95C124FD24FA4C4900206ADF /* AppDepedencyContainer.swift in Sources */,
@@ -582,7 +583,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9581038E24FA9D4A0036D751 /* MockUserLocation.swift in Sources */,
-				9515538F24FAC83900DE1A2B /* WelcomeViewController.swift in Sources */,
 				9581038B24FA9CEE0036D751 /* LocationRepository.swift in Sources */,
 				9581038424FA98D20036D751 /* Location.swift in Sources */,
 			);
