@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import SailingAppUIKit
 
 open class NoStoryBoardView: UIView {
     
